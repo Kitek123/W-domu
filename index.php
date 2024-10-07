@@ -15,7 +15,7 @@ $stmt = $conn->query($sql);$users = $stmt->fetchALL(PDO::FETCH_ASSOC);
     <table border="1">
         <tr>
             <th>ID</th>
-            <th>Imie</th>
+            <th>Imie</th>d
             <th>Email</th>
             <th>Data utworzenia</th>
             <th>Akcje</th>
