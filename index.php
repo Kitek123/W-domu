@@ -1,7 +1,7 @@
 <?php 
     include 'db.php'; // Połączenie z bazą danych
 
-$sql = "SELECT id,name,email,created_at FROM users";
+$sql = "SELECT id, name, email, created_at FROM users";
 $stmt = $conn->query($sql);$users = $stmt->fetchALL(PDO::FETCH_ASSOC);
 ?>
 
@@ -15,7 +15,7 @@ $stmt = $conn->query($sql);$users = $stmt->fetchALL(PDO::FETCH_ASSOC);
     <table border="1">
         <tr>
             <th>ID</th>
-            <th>Imie</th>d
+            <th>Imie</th>
             <th>Email</th>
             <th>Data utworzenia</th>
             <th>Akcje</th>
